@@ -15,6 +15,7 @@ import { TreeComponent } from './tree/tree.component';
 import { BarChartComponent } from './bar-chart/bar-chart.component';
 import { HistogramComponent } from './histogram/histogram.component';
 import { BubbleChartComponent } from './bubble-chart/bubble-chart.component';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { BubbleChartComponent } from './bubble-chart/bubble-chart.component';
     AppRoutingModule,
     NgZorroAntdModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

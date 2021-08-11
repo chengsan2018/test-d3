@@ -1,0 +1,11 @@
+{
+  "/api/baidu/news":{
+    "target":"http://news.baidu.com",
+    "secure":false,
+    "logLevel":"debug",
+    "changeOrigin":true,
+    "pathRewrite":{
+      "^/api/baidu/news":""
+    }
+  }
+}

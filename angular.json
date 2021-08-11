@@ -73,7 +73,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "test-d3:build"
+            "browserTarget": "test-d3:build",
+            "proxyConfig": "proxy.config.json"
           },
           "configurations": {
             "production": {
