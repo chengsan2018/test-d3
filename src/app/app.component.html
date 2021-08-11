@@ -1,0 +1,11 @@
+<nz-breadcrumb>
+  <nz-breadcrumb-item *ngFor="let item of breadcrumbList;let p = index;">
+    <a [routerLink]="[item.link]" (click)="select(p)"
+       [style.color]="item.isActive? 'crimson': 'black'"
+       [style.font-size]="item.isActive? '18px': '14px'">{{item.title}}</a>
+  </nz-breadcrumb-item>
+</nz-breadcrumb>
+
+<div style="margin: 24px 24px 0 24px">
+  <router-outlet></router-outlet>
+</div>

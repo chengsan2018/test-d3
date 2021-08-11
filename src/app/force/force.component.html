@@ -1,0 +1,48 @@
+<button nz-button (click)="printNode()"> 打印节点 </button>
+<svg id="svg"> </svg>
+<div class="tooltip">
+  <form nz-form>
+    <nz-form-item>
+      <nz-form-label [nzSpan]="10">
+        边长
+      </nz-form-label>
+      <nz-form-control [nzSpan]="12">
+        <nz-input-number [(ngModel)]="edgeLength" name="edgeLength"></nz-input-number>
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-label [nzSpan]="10">
+        中心x
+      </nz-form-label>
+      <nz-form-control [nzSpan]="12">
+        <nz-input-number [(ngModel)]="centerX" name="centerX"></nz-input-number>
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-label [nzSpan]="10">
+        中心y
+      </nz-form-label>
+      <nz-form-control [nzSpan]="12">
+        <nz-input-number [(ngModel)]="centerY" name="centerY"></nz-input-number>
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-label [nzSpan]="10">
+        万有引力
+      </nz-form-label>
+      <nz-form-control [nzSpan]="12">
+        <nz-input-number [(ngModel)]="chargeStrength" name="chargeStrength"></nz-input-number>
+      </nz-form-control>
+    </nz-form-item>
+
+
+    <nz-form-item>
+      <nz-form-control style="text-align: center">
+        <button  style="width: 80%" nz-button nzType="primary" (click)="reDraw()">重绘</button>
+      </nz-form-control>
+    </nz-form-item>
+  </form>
+</div>
